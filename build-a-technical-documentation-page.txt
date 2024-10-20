@@ -1,0 +1,234 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header><h1>Technical Documentation</h1></header>
+    <ul>
+        <li><a class="nav-link" href="#Introduction_to_Web_Development">Introduction to Web Development</a></li>
+        <li><a class="nav-link" href="#HTML_Basics">HTML Basics</a></li>
+        <li><a class="nav-link" href="#CSS_Concepts">CSS Concepts</a></li>
+        <li><a class="nav-link" href="#JavaScript_Essentials">JavaScript Essentials</a></li>
+        <li><a class="nav-link" href="#APIs">APIs</a></li>
+        <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+    </ul>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+</nav>
+
+
+
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_Web_Development">
+         <header>   <h2>Introduction to Web Development</h2></header>  
+            <p>This documentation covers the basics of web development, including HTML, CSS, and JavaScript.</p>
+            <p>Web development is essential for creating interactive and engaging websites.</p>
+        </section>
+
+        <section class="main-section" id="HTML_Basics">
+          <header>    <h2>HTML Basics</h2></header>  
+            <p>HTML stands for HyperText Markup Language.</p>
+            <p>It is the standard markup language for creating web pages.</p>
+            <p>HTML elements are represented by tags.</p>
+            <p>Common HTML tags include:</p>
+            <ul>
+                <li>&lt;div&gt;: Defines a division or section</li>
+                <li>&lt;span&gt;: Inline container for text</li>
+                <li>&lt;a&gt;: Defines a hyperlink</li>
+                <li>&lt;img&gt;: Embeds an image</li>
+                <li>&lt;form&gt;: Creates a form for user input</li>
+            </ul>
+            <p>An example of a basic HTML element is:</p>
+            <code>&lt;p&gt;Hello, World!&lt;/p&gt;</code>
+        </section>
+
+        <section class="main-section" id="CSS_Concepts">
+           <header>   <h2>CSS Concepts</h2></header>  
+            <p>CSS stands for Cascading Style Sheets.</p>
+            <p>It controls how HTML elements are displayed on screen.</p>
+            <p>CSS can be used to apply styles to multiple pages simultaneously.</p>
+            <p>For example, you can change the background color of a page:</p>
+            <code>body { background-color: lightblue; }</code>
+            <p>CSS also allows for responsive design through:</p>
+            <ul>
+                <li>Media Queries</li>
+                <li>Flexbox</li>
+                <li>Grid Layout</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="JavaScript_Essentials">
+          <header>    <h2>JavaScript Essentials</h2></header>  
+            <p>JavaScript is a programming language that makes web pages interactive.</p>
+            <p>It allows you to implement complex features on web pages.</p>
+            <p>Basic JavaScript syntax includes:</p>
+            <code>console.log('Hello, World!');</code>
+            <p>Important concepts include:</p>
+            <ul>
+                <li>Variables</li>
+                <li>Functions</li>
+                <li>Events</li>
+                <li>DOM Manipulation</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="APIs">
+           <header>   <h2>APIs</h2></header>  
+            <p>An API (Application Programming Interface) allows different software systems to communicate.</p>
+            <p>RESTful APIs are a common architectural style that uses standard HTTP methods.</p>
+            <p>Common methods include:</p>
+            <ul>
+                <li>GET: Retrieve data from a server</li>
+                <li>POST: Send data to a server</li>
+                <li>PUT: Update existing data</li>
+                <li>DELETE: Remove data from a server</li>
+            </ul>
+            <p>Example of a simple API request in JavaScript:</p>
+            <code>fetch('https://api.example.com/data')</code>
+        </section>
+
+        <section class="main-section" id="Conclusion">
+          <header>  <h2>Conclusion</h2> </header>
+            <p>This documentation has introduced the basics of web development.</p>
+            <p>HTML, CSS, and JavaScript are essential for creating interactive web applications.</p>
+            <p>With these fundamentals, you can start building your own projects!</p>
+            <code>console.log('Happy Coding!');</code>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    transition: background-color 0.3s;
+}
+
+#navbar {
+    width: 250px;
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#navbar h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar li {
+    margin: 10px 0;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: #61dafb;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a.nav-link:hover {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+a.nav-link.active {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+#main-doc {
+    margin-left: 270px;
+    padding: 20px;
+    flex: 1;
+    background-color: #f9f9f9;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+#theme-toggle {
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#theme-toggle:hover {
+    background-color: #21a1f1;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        position: relative;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+#navbar.dark-mode {
+    background-color: #1e1e1e;
+}
+
+.main-section.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+code {
+    background-color: #333;
+    color: #61dafb;
+}
+
+
+** end of undefined **
+

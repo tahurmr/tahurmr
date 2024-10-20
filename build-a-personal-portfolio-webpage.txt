@@ -1,0 +1,114 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome-section">
+        <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-tile">
+            <h3>Project 1</h3>
+            <p>Hand Written Digit Prediction - Classification Analysis</p>
+            <a href="https://github.com/tahurmr/tahurmr/blob/main/py_internship_Project.ipynb" target="_blank">View Project</a>
+        </div>
+        <div class="project-tile">
+            <h3>Project 2</h3>
+            <p>Classification problem using sklearn library.</p>
+            <a href="https://github.com/tahurmr/tahurmr/blob/main/py_internship_prbm3.ipynb" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Connect with me on <a id="profile-link" href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+    </footer>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 1em 0;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+}
+
+#projects {
+    padding: 2em;
+    background: #e2e2e2;
+}
+
+.project-tile {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #navbar ul {
+        flex-direction: column;
+    }
+    #navbar a {
+        padding: 10px;
+    }
+}
+
+
+** end of undefined **
+

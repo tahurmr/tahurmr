@@ -1,0 +1,132 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+<body>
+  <h1 id="title">Survey form </h1>
+  <p id="description">We appreciate your feedback! Please fill out this survey.</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" min="0" max="120" placeholder="Enter your age" required>
+
+        <label for="dropdown">Favorite Color:</label>
+        <select id="dropdown">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+
+        <fieldset>
+            <legend>Preferred Contact Method:</legend>
+            <label>
+                <input type="radio" name="contact" value="email" required> Email
+            </label>
+            <label>
+                <input type="radio" name="contact" value="phone"> Phone
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests:</legend>
+            <label>
+                <input type="checkbox" value="music"> Music
+            </label>
+            <label>
+                <input type="checkbox" value="sports"> Sports
+            </label>
+            <label>
+                <input type="checkbox" value="art"> Art
+            </label>
+        </fieldset>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" placeholder="Enter your comments here"></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+    
+  </form>
+
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff; /* Blue title color */
+}
+
+#survey-form {
+    background: #d3d3d3; /* Light grey background for the form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #343a40; /* Dark gray for label text */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 4px;
+    background-color: #ffffff; /* White for input fields */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    background-color: #ffffff; /* White background on focus */
+}
+
+button {
+    background-color: #28a745; /* Green button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+
+
+
+** end of undefined **
+
