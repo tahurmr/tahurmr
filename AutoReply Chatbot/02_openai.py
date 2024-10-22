@@ -5,7 +5,7 @@ from openai import OpenAI
 client = OpenAI(
   api_key="<Your Key Here>",
 )
-
+ 
 command = '''
 [9:24 pm, 04/09/2024] طحور۔۔: Ok okk
 [9:25 pm, 04/09/2024] Parthiv Koli (CSMU): https://www.codsoft.in/
